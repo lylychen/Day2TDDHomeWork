@@ -1,0 +1,7 @@
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\SumTests.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\PotterShoppingCartTests.pdb

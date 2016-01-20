@@ -1,0 +1,4 @@
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\obj\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\obj\Debug\PotterShoppingCart.pdb

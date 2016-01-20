@@ -1,0 +1,28 @@
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\PotterShoppingCartTests.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\CalculatorTests\obj\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCartTests.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCartTests\obj\Debug\PotterShoppingCartTests.pdb

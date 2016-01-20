@@ -1,0 +1,13 @@
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\obj\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day1-lab-source\day1-HomeWork\Calculator\obj\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCart\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCart\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCart\obj\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\201601 Trend Micro\day2-lab-source\day2-homework\PotterShoppingCart\PotterShoppingCart\obj\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCart\bin\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCart\bin\Debug\PotterShoppingCart.pdb
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCart\obj\Debug\PotterShoppingCart.csprojResolveAssemblyReference.cache
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCart\obj\Debug\PotterShoppingCart.dll
+D:\TDD上課資料\TDD課程\Repos\Day2TDDHomeWork_1\PotterShoppingCart\PotterShoppingCart\obj\Debug\PotterShoppingCart.pdb
