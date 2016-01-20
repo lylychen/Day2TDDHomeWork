@@ -112,6 +112,23 @@ namespace PotterShoppingCart.Tests
             //assert
             Assert.AreEqual(expected, Convert.ToInt32(actual));
 
+        }
+
+        [TestMethod]
+        public void CalculatorFee_is_1_episode_1_quantity_2_episode_2_quantity_3_episode_2_quantity_Fee_Should_Be_460()
+        {
+            //arrange
+            var stubDAO = new StubShoppingCartDao();
+            var target = new CalculatorFeeService(stubDAO, 7);
+
+            var expected = 460;
+
+            //act
+            var actual = target.CalculatorFee();
+
+            //assert
+            Assert.AreEqual(expected, Convert.ToInt32(actual));
+
         } 
         
     }
@@ -196,7 +213,17 @@ namespace PotterShoppingCart.Tests
                     };
 
                     break;
-                default:                    
+                case 7:
+
+                    ShoppingCartData = new List<ShoppingCart>()
+                    {
+                        new ShoppingCart() { Episode=1 ,BookName="Harry Potter and the Sorcerer's Stone", SellPrice = 100, Quantity=1 },
+                        new ShoppingCart() { Episode=2 ,BookName="Harry Potter and the Chamber of Secrets", SellPrice = 100, Quantity=2 },
+                        new ShoppingCart() { Episode=3 ,BookName="Harry Potter and the Prisoner of Azkaban", SellPrice = 100, Quantity=2 },
+                        new ShoppingCart() { Episode=4 ,BookName="Harry Potter and the Goblet of Fire", SellPrice = 100, Quantity=0 },
+                        new ShoppingCart() { Episode=5 ,BookName="Harry Potter and the Order of the Phoenix", SellPrice = 100, Quantity=0 }
+                    };
+
                     break;
             }
 

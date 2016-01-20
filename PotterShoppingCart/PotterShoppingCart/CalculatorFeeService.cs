@@ -26,54 +26,74 @@ namespace PotterShoppingCart
             var TotalFee = 0;
             var FinalFee = 0;
             var DiscountGroup = 0;   //折扣組數
-            var QuantityTotal = ShoppingCarts.Sum(x => x.Quantity);   //取出總本數
+            var QuantityTotal = ShoppingCarts.Sum(x => x.Quantity);   //取出總本數           
 
             var i = 0;
-            var j = 0;
+            var j = 1;
+            var y = 1;
 
-            while (i < QuantityTotal)
+            while (QuantityTotal > 0)
             {
-                j = 1;
-                while (j <= ShoppingCarts.Count)
-                {
-                    if (ShoppingCarts.Where(x=>x.Episode == j).ToList()[0].Quantity > 0)
+                while (y <= ShoppingCarts.Count)
+                { 
+                    if (ShoppingCarts.Where(x => x.Episode == y).ToList()[0].Quantity > 0)
                     {
-                        TotalFee += ShoppingCarts.Take(j).ToList()[0].SellPrice;
-                        ShoppingCarts.Where(x => x.Episode == j).ToList()[0].Quantity--;
-                        DiscountGroup++;
-                    }                   
+                        DiscountGroup = GetDiscountGroup(ShoppingCarts, y);
+                        TotalFee = DiscountGroup * 100;
 
-                    j++;
-                }                
+                        switch (DiscountGroup)
+                        {
+                            case 1:
+                                FinalFee += TotalFee * 100 / 100;
+                                break;
+                            case 2:
+                                FinalFee += TotalFee * 95 / 100;
+                                break;
+                            case 3:
+                                FinalFee += TotalFee * 90 / 100;
+                                break;
+                            case 4:
+                                FinalFee += TotalFee * 80 / 100;
+                                break;
+                            case 5:
+                                FinalFee += TotalFee * 75 / 100;
+                                break;
+                        }
 
-                switch (DiscountGroup)
-                {
-                    case 1:
-                        FinalFee += TotalFee * 100 / 100;
-                        break;
-                    case 2:
-                        FinalFee += TotalFee * 95 / 100;
-                        break;
-                    case 3:
-                        FinalFee += TotalFee * 90 / 100;
-                        break;
-                    case 4:
-                        FinalFee += TotalFee * 80 / 100;
-                        break;
-                    case 5:
-                        FinalFee += TotalFee * 75 / 100;
-                        break;
+                        QuantityTotal -= DiscountGroup;   //總本數 - 折扣組數
+                        DiscountGroup = 0;
+                        TotalFee = 0;
+                    }
+
+                    if (ShoppingCarts.Where(x => x.Episode == y).ToList()[0].Quantity == 0)
+                        y++;
                 }
-
-                QuantityTotal -= DiscountGroup;   //總本數 - 折扣組數
-                DiscountGroup = 0;
-                TotalFee = 0;
             }
 
             return FinalFee; 
-        }  
-    }
+        }
 
+        private int GetDiscountGroup(List<ShoppingCart> ShoppingCarts, int start)
+        {
+            int DiscountGroup = 0;
+
+            while (start <= 5)
+            {
+                if (ShoppingCarts.Where(x => x.Episode == start).ToList()[0].Quantity > 0)
+                {
+                    ShoppingCarts.Where(x => x.Episode == start).ToList()[0].Quantity--;
+                    DiscountGroup++;
+                }
+                else
+                    break;
+
+                start++;
+            }
+
+            return DiscountGroup;
+        }
+    }
+  
 
     public class ShoppingCartDao : IShoppingCartDao
     {
