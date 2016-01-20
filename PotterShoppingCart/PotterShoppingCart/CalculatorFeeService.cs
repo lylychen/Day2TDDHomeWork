@@ -51,6 +51,9 @@ namespace PotterShoppingCart
                 case 2:
                     FinalFee = TotalFee * 95 / 100;
                     break;
+                case 3:
+                    FinalFee = TotalFee * 90 / 100;
+                    break;
                 default:
                     FinalFee = TotalFee * 100 / 100;
                     break;
