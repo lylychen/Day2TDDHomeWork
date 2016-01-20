@@ -21,48 +21,53 @@ namespace PotterShoppingCart
 
         public int CalculatorFee()
         {
-            var ShoppingCarts = _ShoppingCartDao.GetShoppingCart(this._Scenario);
-
-           // var TotalFee = ShoppingCarts.Where(x=>x.Quantity).Sum(x => x.SellPrice * x.Quantity);
+            var ShoppingCarts = _ShoppingCartDao.GetShoppingCart(this._Scenario);          
 
             var TotalFee = 0;
-            var FinalFee = 0;            
-            var Episode = 0;
-            var Quantity = 0;
+            var FinalFee = 0;
+            var DiscountGroup = 0;   //折扣組數
+            var QuantityTotal = ShoppingCarts.Sum(x => x.Quantity);   //取出總本數
 
-            var index = 0;
-            while (index < ShoppingCarts.Count)
+            var i = 0;
+            var j = 0;
+
+            while (i < QuantityTotal)
             {
-                if (Episode != ShoppingCarts.ToList()[index].Episode && ShoppingCarts.ToList()[index].Quantity > 0)
-                { 
-                    TotalFee += ShoppingCarts.ToList()[index].SellPrice * ShoppingCarts.ToList()[index].Quantity;
-                    Quantity++;
+                j = 1;
+                while (j <= ShoppingCarts.Count)
+                {
+                    if (ShoppingCarts.Where(x=>x.Episode == j).ToList()[0].Quantity > 0)
+                    {
+                        TotalFee += ShoppingCarts.Take(j).ToList()[0].SellPrice;
+                        ShoppingCarts.Where(x => x.Episode == j).ToList()[0].Quantity--;
+                        DiscountGroup++;
+                    }                   
+
+                    j++;
+                }                
+
+                switch (DiscountGroup)
+                {
+                    case 1:
+                        FinalFee += TotalFee * 100 / 100;
+                        break;
+                    case 2:
+                        FinalFee += TotalFee * 95 / 100;
+                        break;
+                    case 3:
+                        FinalFee += TotalFee * 90 / 100;
+                        break;
+                    case 4:
+                        FinalFee += TotalFee * 80 / 100;
+                        break;
+                    case 5:
+                        FinalFee += TotalFee * 75 / 100;
+                        break;
                 }
 
-                Episode = ShoppingCarts.ToList()[index].Episode;
-                index += 1;
-            }
-
-            switch (Quantity)
-            {
-                case 1:
-                    FinalFee = TotalFee * 100 / 100;
-                    break;
-                case 2:
-                    FinalFee = TotalFee * 95 / 100;
-                    break;
-                case 3:
-                    FinalFee = TotalFee * 90 / 100;
-                    break;
-                case 4:
-                    FinalFee = TotalFee * 80 / 100;
-                    break;
-                case 5:
-                    FinalFee = TotalFee * 75 / 100;
-                    break;
-                default:
-                    FinalFee = TotalFee * 100 / 100;
-                    break;
+                QuantityTotal -= DiscountGroup;   //總本數 - 折扣組數
+                DiscountGroup = 0;
+                TotalFee = 0;
             }
 
             return FinalFee; 
