@@ -21,9 +21,9 @@ namespace PotterShoppingCart
         {
             var ShoppingCarts = _ShoppingCartDao.GetShoppingCart();
 
-            var ordersOfBook = ShoppingCarts.Where(x=>x.Quantity > 0).Sum(x => x.SellPrice * x.Quantity);
+            var TotalFee = ShoppingCarts.Where(x=>x.Quantity > 0).Sum(x => x.SellPrice * x.Quantity);
 
-            return ordersOfBook;
+            return TotalFee;
         }  
     }
 
