@@ -11,26 +11,58 @@ namespace PotterShoppingCart
     {
 
         private IShoppingCartDao _ShoppingCartDao;
+        private int _Scenario;
 
-        public CalculatorFeeService(IShoppingCartDao ShoppingCartDao)
+        public CalculatorFeeService(IShoppingCartDao ShoppingCartDao, int Scenario)
         {
             this._ShoppingCartDao = ShoppingCartDao;
+            this._Scenario = Scenario;
         }
 
         public int CalculatorFee()
         {
-            var ShoppingCarts = _ShoppingCartDao.GetShoppingCart();
+            var ShoppingCarts = _ShoppingCartDao.GetShoppingCart(this._Scenario);
 
-            var TotalFee = ShoppingCarts.Where(x=>x.Quantity > 0).Sum(x => x.SellPrice * x.Quantity);
+           // var TotalFee = ShoppingCarts.Where(x=>x.Quantity).Sum(x => x.SellPrice * x.Quantity);
 
-            return TotalFee;
+            var TotalFee = 0;
+            var FinalFee = 0;            
+            var Episode = 0;
+            var Quantity = 0;
+
+            var index = 0;
+            while (index < ShoppingCarts.Count)
+            {
+                if (Episode != ShoppingCarts.ToList()[index].Episode && ShoppingCarts.ToList()[index].Quantity > 0)
+                { 
+                    TotalFee += ShoppingCarts.ToList()[index].SellPrice * ShoppingCarts.ToList()[index].Quantity;
+                    Quantity++;
+                }
+
+                Episode = ShoppingCarts.ToList()[index].Episode;
+                index += 1;
+            }
+
+            switch (Quantity)
+            {
+                case 1:
+                    FinalFee = TotalFee * 100 / 100;
+                    break;
+                case 2:
+                    FinalFee = TotalFee * 95 / 100;
+                    break;
+                default:
+                    break;
+            }
+
+            return FinalFee; 
         }  
     }
 
 
     public class ShoppingCartDao : IShoppingCartDao
     {
-        List<ShoppingCart> IShoppingCartDao.GetShoppingCart()
+        List<ShoppingCart> IShoppingCartDao.GetShoppingCart(int Scenario)
         {
             throw new NotImplementedException();
         }
@@ -38,7 +70,7 @@ namespace PotterShoppingCart
 
     public interface IShoppingCartDao
     {
-        List<ShoppingCart> GetShoppingCart();
+        List<ShoppingCart> GetShoppingCart(int Scenario);
     }
 
     public class ShoppingCart
